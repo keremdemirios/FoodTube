@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="FoodTube" customModuleProvider="target">
+            <connections>
+                <outlet property="addWordsButton" destination="K61-0E-Ss7" id="Upu-wb-yYN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wordsTextField" destination="i7t-ls-Pk0" id="6Bz-Sv-QXa"/>
+                <outlet property="wordsView" destination="HbM-Cc-RqV" id="ew4-Jd-ULg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i7t-ls-Pk0">
+                    <rect key="frame" x="64.333333333333343" y="159" width="264.33333333333326" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="V8C-qD-X6E"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="YLj-bK-WHQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K61-0E-Ss7">
+                    <rect key="frame" x="337" y="169.66666666666666" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Vny-h3-d5U"/>
+                        <constraint firstAttribute="width" constant="40" id="ong-Ce-uJz"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" subtitle=""/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbM-Cc-RqV">
+                    <rect key="frame" x="66.666666666666686" y="259" width="260" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="2Rq-Px-zb8"/>
+                        <constraint firstAttribute="width" constant="260" id="tOr-NT-0KO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="i7t-ls-Pk0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0DO-f0-Avv"/>
+                <constraint firstItem="K61-0E-Ss7" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="7zf-Li-MN3"/>
+                <constraint firstItem="HbM-Cc-RqV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XKS-hR-bw6"/>
+                <constraint firstItem="HbM-Cc-RqV" firstAttribute="top" secondItem="i7t-ls-Pk0" secondAttribute="bottom" constant="40" id="ejh-NM-7zX"/>
+                <constraint firstItem="K61-0E-Ss7" firstAttribute="centerY" secondItem="i7t-ls-Pk0" secondAttribute="centerY" constant="0.5" id="gGk-PQ-m3y"/>
+                <constraint firstItem="i7t-ls-Pk0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="hn8-mv-SWe"/>
+                <constraint firstItem="K61-0E-Ss7" firstAttribute="leading" secondItem="i7t-ls-Pk0" secondAttribute="trailing" constant="8.3333333333333144" id="oOo-W6-zhI"/>
+            </constraints>
+            <point key="canvasLocation" x="-5.343511450381679" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
