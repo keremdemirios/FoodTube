@@ -50,6 +50,9 @@
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                    <connections>
+                        <action selector="searchButtonActions:" destination="-1" eventType="touchUpInside" id="oky-GH-vlL"/>
+                    </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="72W-ag-4rP">
                     <rect key="frame" x="71.666666666666686" y="269" width="250" height="150"/>

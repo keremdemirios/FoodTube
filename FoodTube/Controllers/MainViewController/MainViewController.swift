@@ -42,5 +42,12 @@ class MainViewController: UIViewController {
     // MARK : Functions
     
     // MARK : Actions
-
+    @IBAction func searchButtonActions(_ sender: Any) {
+        let vc = VideosViewController()
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(vc, animated: true)
+        print("working")
+        wordsTextField.text = nil
+    }
+    
 }
