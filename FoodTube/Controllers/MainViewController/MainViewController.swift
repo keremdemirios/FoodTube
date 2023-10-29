@@ -13,7 +13,10 @@ class MainViewController: UIViewController {
     // MARK : UI Elements
     @IBOutlet weak var wordsTextField: UITextField!
     @IBOutlet weak var addWordsButton: UIButton!
-    @IBOutlet weak var wordsView: UIView!
+//    @IBOutlet weak var wordsView: UIView!
+    @IBOutlet weak var searchButton: UIButton!
+//    @IBOutlet weak var wordsCollectionView: UICollectionView!
+    @IBOutlet weak var wordsCollectionView: UICollectionView!
     
     // MARK : Life Cycle
     override func viewDidLoad() {
@@ -29,9 +32,11 @@ class MainViewController: UIViewController {
         addWordsButton.addBorder(color: .systemBlue, width: 1)
         addWordsButton.round()
         
-        wordsView.addBorder(color: .systemGray, width: 1)
-        wordsView.round()
+        wordsCollectionView.addBorder(color: .systemGray, width: 1)
+        wordsCollectionView.round()
+        wordsCollectionView.backgroundColor = .clear
         
+        searchButton.round()
     }
     
     // MARK : Functions
