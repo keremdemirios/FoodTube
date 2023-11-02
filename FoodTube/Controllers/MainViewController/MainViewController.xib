@@ -13,7 +13,7 @@
                 <outlet property="addWordsButton" destination="K61-0E-Ss7" id="Upu-wb-yYN"/>
                 <outlet property="searchButton" destination="J5g-JI-QWC" id="B92-qN-lMP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="wordsCollectionView" destination="72W-ag-4rP" id="gIu-X6-sIE"/>
+                <outlet property="wordsCollectionView" destination="7j9-JU-Dmm" id="N3I-Qx-92c"/>
                 <outlet property="wordsTextField" destination="i7t-ls-Pk0" id="6Bz-Sv-QXa"/>
             </connections>
         </placeholder>
@@ -54,14 +54,14 @@
                         <action selector="searchButtonActions:" destination="-1" eventType="touchUpInside" id="oky-GH-vlL"/>
                     </connections>
                 </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="72W-ag-4rP">
-                    <rect key="frame" x="71.666666666666686" y="269" width="250" height="150"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7j9-JU-Dmm">
+                    <rect key="frame" x="71.666666666666686" y="249" width="250" height="150"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="250" id="Ojs-hp-V4N"/>
-                        <constraint firstAttribute="height" constant="150" id="yFX-rS-Rr7"/>
+                        <constraint firstAttribute="height" constant="150" id="7wy-t6-ZuU"/>
+                        <constraint firstAttribute="width" constant="250" id="lYl-wY-hly"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QfN-eu-AS0">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KCa-VU-2Mc">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -73,14 +73,14 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="i7t-ls-Pk0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0DO-f0-Avv"/>
+                <constraint firstItem="7j9-JU-Dmm" firstAttribute="top" secondItem="i7t-ls-Pk0" secondAttribute="bottom" constant="30" id="0Ud-dC-98V"/>
                 <constraint firstItem="K61-0E-Ss7" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="7zf-Li-MN3"/>
-                <constraint firstItem="72W-ag-4rP" firstAttribute="top" secondItem="i7t-ls-Pk0" secondAttribute="bottom" constant="50" id="AkZ-Te-8eq"/>
-                <constraint firstItem="72W-ag-4rP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="R0z-2z-k3S"/>
+                <constraint firstItem="J5g-JI-QWC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9r7-Ch-Tjv"/>
+                <constraint firstItem="J5g-JI-QWC" firstAttribute="top" secondItem="7j9-JU-Dmm" secondAttribute="bottom" constant="90" id="Pur-j6-cGk"/>
                 <constraint firstItem="K61-0E-Ss7" firstAttribute="centerY" secondItem="i7t-ls-Pk0" secondAttribute="centerY" constant="0.5" id="gGk-PQ-m3y"/>
                 <constraint firstItem="i7t-ls-Pk0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="hn8-mv-SWe"/>
-                <constraint firstItem="J5g-JI-QWC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iTC-m1-2c2"/>
                 <constraint firstItem="K61-0E-Ss7" firstAttribute="leading" secondItem="i7t-ls-Pk0" secondAttribute="trailing" constant="8.3333333333333144" id="oOo-W6-zhI"/>
-                <constraint firstItem="J5g-JI-QWC" firstAttribute="top" secondItem="72W-ag-4rP" secondAttribute="bottom" constant="70" id="tlH-Oo-2Eg"/>
+                <constraint firstItem="7j9-JU-Dmm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qdf-cc-lxP"/>
             </constraints>
             <point key="canvasLocation" x="-5.343511450381679" y="19.718309859154932"/>
         </view>

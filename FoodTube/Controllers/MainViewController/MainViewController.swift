@@ -34,9 +34,12 @@ class MainViewController: UIViewController {
         
         wordsCollectionView.addBorder(color: .systemGray, width: 1)
         wordsCollectionView.round()
-        wordsCollectionView.backgroundColor = .clear
+//        wordsCollectionView.backgroundColor = .clear
         
         searchButton.round()
+        
+        let nibName = UINib(nibName: "MainWordsCollectionViewCell", bundle: nil)
+        wordsCollectionView.register(nibName, forCellWithReuseIdentifier: MainWordsCollectionViewCell.identifier)
     }
     
     // MARK : Functions
@@ -49,5 +52,4 @@ class MainViewController: UIViewController {
         print("working")
         wordsTextField.text = nil
     }
-    
 }

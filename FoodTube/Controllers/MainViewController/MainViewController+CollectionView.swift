@@ -9,34 +9,42 @@ import Foundation
 import UIKit
 
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainWordsCell.identifier, for: indexPath) as? MainWordsCell else {
-            return UICollectionViewCell()
-        }
-        
-        cell.wordsLabel.text = "KEREM"
-        return cell
-    }
     
     func setupCollectionView(){
         wordsCollectionView.delegate = self
         wordsCollectionView.dataSource = self
         
-        wordsCollectionView.backgroundColor = .clear
         registerCells()
+        print("KERME 55")
     }
     
     func registerCells(){
-        wordsCollectionView.register(MainWordsCell.register(), forCellWithReuseIdentifier: MainWordsCell.identifier)
+        wordsCollectionView.register(MainWordsCollectionViewCell.register(), forCellWithReuseIdentifier: MainWordsCollectionViewCell.identifier)
     }
     
-    func reloadCollectionView() {
+    func reloadCollectionView(){
         DispatchQueue.main.async {
             self.wordsCollectionView.reloadData()
         }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainWordsCollectionViewCell.identifier, for: indexPath) as? MainWordsCollectionViewCell else {
+            print("KEREM DEMIR")
+            return UICollectionViewCell()
+        }
+        print("Working")
+        cell.label.text = "KEREM 2"
+        cell.backgroundColor = .red
+        return cell
     }
 }
